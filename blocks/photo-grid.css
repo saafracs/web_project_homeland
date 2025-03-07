@@ -1,0 +1,19 @@
+.photo-grid {
+  margin: 118px 0 0 0;
+}
+
+.photo-grid__items {
+  position: relative;
+  left: -105px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  min-width: 1184px;
+  justify-content: center;
+}
+
+@media screen and (min-width: 1365px) {
+  .photo-grid__items {
+    position: static;
+  }
+}
