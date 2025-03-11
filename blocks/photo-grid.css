@@ -3,17 +3,19 @@
 }
 
 .photo-grid__items {
-  position: relative;
-  left: -105px;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-template-rows: repeat(2, auto);
   gap: 16px;
-  min-width: 1184px;
-  justify-content: center;
 }
 
-@media screen and (min-width: 1365px) {
+.photo-grid__item {
+  width: 100%;
+}
+
+@media screen and (max-width: 1280px) {
   .photo-grid__items {
-    position: static;
+    width: calc(100% + 15vw);
+    justify-self: center;
   }
 }
