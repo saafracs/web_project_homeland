@@ -19,3 +19,23 @@
     justify-self: center;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .photo-grid__items {
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(4, auto);
+    justify-content: center;
+  }
+
+  .photo-grid__items {
+    max-width: 94%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .photo-grid__items {
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(8, auto);
+    gap: 12px;
+  }
+}
